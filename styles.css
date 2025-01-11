@@ -1,0 +1,246 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and main content */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #121212; /* Dark background */
+    color: #f4f4f4; /* Light text color */
+    min-height: 100vh; /* Ensure body fills at least the viewport height */
+    display: flex;
+    flex-direction: column; /* Stack header, content, and footer */
+    justify-content: space-between; /* Ensure footer stays at the bottom */
+}
+
+/* Home section */
+#home {
+    background: #000; /* Black background */
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack the content vertically */
+    height: 100vh; /* Full viewport height */
+    padding: 0 20px;
+}
+
+#home h1 {
+    font-size: 5rem; /* Increase the font size */
+    margin-bottom: 30px; /* Add some space below the title */
+}
+
+#home .btn {
+    background-color: #8e15f0; /* Button color */
+    color: white;
+    padding: 20px 50px;
+    text-decoration: none;
+    border-radius: 25px; /* Rounded corners */
+    font-weight: bold;
+    font-size: 1.2rem; /* Increase button font size */
+}
+
+#home .btn:hover {
+    background-color: #ff8533; /* Slightly lighter orange on hover */
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #000000; /* Darker black for navbar */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2; /* Keep navbar on top */
+}
+
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #8e15f0; /* Purple shade for logo */
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff8533; /* Light orange hover effect for links */
+}
+
+/* Section Styles */
+section {
+    padding: 120px 20px; /* Adjust padding to account for fixed navbar */
+    text-align: center;
+    position: relative;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.1rem;
+    color: #bbb;
+    margin-bottom: 40px;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #8e15f0; /* Purple background for buttons */
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+    position: relative;
+}
+
+.btn:hover {
+    background-color: #ff8533; /* Lighter orange on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0; /* Add more padding to make the footer taller */
+    background-color: #000000; /* Dark footer background */
+    color: white;
+}
+
+footer p {
+    font-size: 0.9em;
+    color: #bbb;
+}
+
+/* Home Page Specific Styles */
+#home h1 {
+    font-size: 5rem; /* Large header for home */
+}
+
+/* Register Page Styles */
+#register {
+    background: #000000;
+    color: white;
+    padding: 40px 20px;
+}
+
+#register h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+#register p {
+    font-size: 1.1rem;
+    color: #bbb;
+    margin-bottom: 40px;
+}
+
+/* Explore Section Styles */
+#explore {
+    background: #000000;
+    color: white;
+    padding: 40px 20px;
+    margin-bottom: 0;
+}
+
+#explore h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+#explore p {
+    font-size: 1.1rem;
+    color: #bbb;
+    margin-bottom: 40px;
+}
+
+/* Table Styles */
+.details-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.details-table th, .details-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #000000; /* Dark border for a more sleek look */
+}
+
+.details-table th {
+    background-color: #8e15f0; /* Purple header */
+    color: white;
+    font-size: 1.1rem;
+}
+
+.details-table td {
+    background-color: #000000; /* Dark background for table rows */
+    color: #bbb;
+    font-size: 1rem;
+}
+
+.details-table tr:nth-child(even) {
+    background-color: #000000; /* Alternating row colors for readability */
+}
+
+.details-table tr:hover {
+    background-color: #000000; /* Highlight row on hover */
+}
+
+.details-table td:last-child {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .details-table {
+        font-size: 0.9rem; /* Smaller text for smaller screens */
+    }
+    
+    .details-table th, .details-table td {
+        padding: 10px;
+    }
+}
+
+
+/* About Page Styles */
+#about {
+    background: #000000;
+    color: white;
+    padding: 40px 20px;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+#about p {
+    font-size: 1.1rem;
+    color: #bbb;
+    margin-bottom: 40px;
+}
